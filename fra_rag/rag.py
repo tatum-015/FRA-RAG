@@ -7,6 +7,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
+#from langsmith import traceable
+
 
 from fra_rag.config import CHROMA_SETTINGS, EMBEDDING_MODEL_NAME
 from fra_rag.utils import load_environment
@@ -65,7 +67,8 @@ Answer:"""
 
     return chain
 
-if __name__ == "__main__":
+#@traceable
+def do_everything():
      # Load environment variables
     load_environment()
     # Example usage
@@ -75,10 +78,14 @@ if __name__ == "__main__":
     # Example queries
     queries = [
         "What are the main fire safety recommendations?",
-        "What is the current risk rating for this building?",
-        "When was the last fire risk assessment conducted?"
+        "What is the height of the building?",
+        "Descrbe the layout of the building"
     ]
     
     for query in queries:
         print(f"\nQuestion: {query}")
         print(f"Answer: {chain.invoke(query)}\n") 
+
+
+if __name__ == "__main__":
+    do_everything()

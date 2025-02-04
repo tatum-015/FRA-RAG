@@ -17,6 +17,7 @@ CHROMA_SETTINGS: Dict[str, Any] = {
 # Document processing settings
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100
+MIN_CHUNK_SIZE = 100 
 EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 
 # Create necessary directories

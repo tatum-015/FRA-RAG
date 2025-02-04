@@ -78,7 +78,6 @@ def do_everything():
     # Example queries
     queries = [
         "What are the main fire safety recommendations?",
-        "What is the height of the building?",
         "Descrbe the layout of the building"
     ]
     

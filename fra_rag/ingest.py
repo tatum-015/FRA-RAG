@@ -1,317 +1,179 @@
-from typing import List, Dict, Any
+#ingest.py
+from pathlib import Path
+from typing import List, Dict, Any, Optional, Type
 import logging
 import json
-import re
-from pathlib import Path
-from pprint import pformat 
-from datetime import datetime
 import os
-import nltk
-import chromadb
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.docstore.document import Document  # Added explicit Document import
-from langchain_unstructured import UnstructuredLoader
-from langchain_community.embeddings import HuggingFaceEmbeddings
 import glob
+from google import genai
+from pydantic import BaseModel, Field
+from langchain.docstore.document import Document
 
 from fra_rag.config import (
-    CHUNK_SIZE, 
-    CHUNK_OVERLAP,
-    MIN_CHUNK_SIZE,
-    EMBEDDING_MODEL_NAME, 
-    CHROMA_SETTINGS,
-    PROCESSED_DATA_DIR  # Added from config
+    PROCESSED_DATA_DIR,
+    RAW_DATA_DIR,
+    GEMINI_API_KEY 
 )
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Ensure NLTK 'punkt' tokenizer is available
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    logger.info("Downloading NLTK 'punkt' tokenizer...")
-    nltk.download('punkt')
+# Define Pydantic models for structured output
+class AssessmentDetails(BaseModel):
+    property_classification: str = Field(description="The classification level of the property")
+    bafe_certificate_number: str = Field(description="The BAFE SP205-1 certificate reference number")
+    responsible_person: str = Field(description="Organization or person responsible for the property")
+    assessment_completed_by: str = Field(description="Name of the assessor who completed the assessment")
+    assessment_checked_by: str = Field(description="Name of the person who checked/verified the assessment")
+    inspection_date: str = Field(description="Date when the inspection was carried out")
+    issue_date: str = Field(description="Date when the assessment was issued to the client")
 
-def clean_text(text: str) -> str:
-    """Basic text cleaning for FRA documents."""
-    # Remove special characters
-    text = re.sub(r'[^\x00-\x7F]+', ' ', text)
-    # Standardize whitespace
-    text = re.sub(r'\s+', ' ', text)
-    # Remove HTML tags
-    text = re.sub(r'<[^>]+>', ' ', text)
-    # Remove standalone special characters
-    text = re.sub(r'^\W+$', '', text)
-    return text.strip()
+class Action(BaseModel):
+    action_id: str = Field(description="The unique identifier for this action (e.g., M.8)")
+    comment: str = Field(description="A comment on the action")
+    recommendation: str = Field(description="The full recommendation of what needs to be done")
+    priority: str = Field(description="Priority level (High, Medium, or Low)")
+    due_date: str = Field(description="When this action needs to be completed by")
 
-def preprocess_document(doc: Document) -> Document:
-    if doc.metadata.get('category') == 'Table':
-        # Extract just the text content from tables
-        doc.page_content = clean_text(doc.page_content)
-    return doc
+class Section(BaseModel):
+    section_id: str = Field(description="The section number or identifier")
+    title: str = Field(description="The title of this section")
+    content: str = Field(description="The main content text of this section")
+    questions: List[str] = Field(description="List of questions in this section, including their IDs")
+    actions: List[Action] = Field(description="List of actions required in this section")
 
 
-def load_documents(file_paths: List[str]) -> List[Document]:
+class FRADocument(BaseModel):
+    document_id: str = Field(description="The UPRN number or other unique identifier for this document")
+    assessment_date: str = Field(description="The date when this assessment was carried out")
+    building_name: str = Field(description="The name or address of the building assessed")
+    assessment_details: AssessmentDetails = Field(description="Detailed assessment information")
+    sections: List[Section] = Field(description="All sections of the fire risk assessment")
+
+# Initialize Gemini client
+client = genai.Client(api_key=GEMINI_API_KEY)
+model_id = "gemini-2.0-flash"
+
+def extract_structured_data(file_path: str, model: Type[BaseModel]):
     """
-    Load documents using UnstructuredFileLoader with PDF support.
+    Extract structured data from a PDF file using Gemini's File API.
     
     Args:
-        file_paths: List of paths to FRA documents
+        file_path: Path to the PDF file
+        model: Pydantic model class to structure the output
         
     Returns:
-        List of processed documents
+        Parsed pydantic model instance
     """
-    documents = []
-    for file_path in file_paths:
-        logger.info(f"Loading document: {file_path}")
-        try:
-            loader = UnstructuredLoader(
-                file_path,
-                mode="elements",
-                strategy="hi_res",
-                include_page_breaks=True,
-                partition_via_api=True,
-                **{
-                    # Custom detection settings
-                    "detect_titles": True,
-                    "detect_lists": True,
-                    "detect_tables": True,
-                    "detection_settings": {  # Added better detection settings
-                        "ocr_on": True,
-                        "text_formatting": True
-                    }
-                }
-            )
-            loaded_docs = loader.load()
-            if not loaded_docs:
-                logger.warning(f"No documents loaded from {file_path}")
-                continue
-            
-            # Add metadata and preprocess in one step
-            loaded_docs = [
-                preprocess_document(
-                    Document(
-                        page_content=doc.page_content,
-                        metadata={
-                            **doc.metadata,
-                            "file_path": file_path,
-                            "document_type": "FRA"
-                        }
-                    )
-                ) for doc in loaded_docs
-            ]
-                
-            documents.extend(loaded_docs)
-                
-        except Exception as e:
-            logger.error(f"Error loading document {file_path}: {str(e)}")
-            raise
+    # Step 1: Upload the file to the File API
+    file = client.files.upload(
+        file=file_path, 
+        config={'display_name': os.path.basename(file_path).split('.')[0]}
+    )
+    
+    # Step 2: Extract raw data using Gemini
+    prompt = """Please extract the following information from this PDF file and return it as a JSON object:
+    - document_id: The UPRN or unique identifier
+    - assessment_date: When the assessment was carried out
+    - building_name: Name/address of building assessed
+    - assessment_details: Object containing property classification, BAFE number, etc.
+    - sections: Array of sections with their IDs, titles, content, and actions
+    
+    Return the data as a clean JSON object with no additional text."""
+    
+    response = client.models.generate_content(
+        model=model_id, 
+        contents=[prompt, file], 
+        config={'response_mime_type': 'application/json', 'response_schema': model}
+    )
+    
+    # Step 3: Parse the raw response into JSON
+    try:
+        json_data = json.loads(response.text)
+        logger.debug(f"Extracted JSON: {json.dumps(json_data, indent=2)}")
+    except json.JSONDecodeError as e:
+        logger.error(f"Failed to parse Gemini response as JSON: {response.text}")
+        raise
+        
+    # Step 4: Validate against Pydantic model
+    try:
+        return model.model_validate(json_data)
+    except Exception as e:
+        logger.error(f"Failed to validate JSON against model: {str(e)}")
+        raise
 
-    # Save to JSON for Inspection
-    output_path = Path(PROCESSED_DATA_DIR) / "extracted_documents.json"
-    with open(output_path, "w", encoding="utf-8") as f:
-        json_docs = [
-            {
-                "page_content": doc.page_content,
-                "metadata": doc.metadata
-            } for doc in documents
-        ]
-        json.dump(json_docs, f, ensure_ascii=False, indent=4)
-        logger.info(f"Saved extracted documents to {output_path}")
+def process_document(file_path: str) -> Optional[Document]:
+    """Process a single document through the pipeline."""
+    try:
+        logger.info(f"Processing: {file_path}")
+        
+        # Extract structured data
+        fra_doc = extract_structured_data(file_path, FRADocument)
+        
+        # Get token count for the file
+        file = client.files.upload(
+            file=file_path,
+            config={'display_name': os.path.basename(file_path)}
+        )
+        file_size = client.models.count_tokens(model=model_id, contents=file)
+        
+        # Create Document object
+        return Document(
+            page_content=fra_doc.model_dump_json(indent=2),
+            metadata={
+                "file_path": file_path,
+                "document_id": fra_doc.document_id,
+                "assessment_date": fra_doc.assessment_date,
+                "building_name": fra_doc.building_name,
+                "token_count": file_size.total_tokens
+            }
+        )
+        
+    except Exception as e:
+        logger.error(f"Failed to process {file_path}: {str(e)}")
+        return None
+
+def load_documents(file_paths: List[str]) -> List[Document]:
+    """Process multiple documents."""
+    documents = []
+    
+    for file_path in file_paths:
+        doc = process_document(file_path)
+        if doc:
+            documents.append(doc)
+            logger.info(f"Successfully processed: {file_path}")
+        else:
+            logger.warning(f"Failed to process: {file_path}")
+    
+    if documents:
+        output_path = Path(PROCESSED_DATA_DIR) / "extracted_documents.json"
+        try:
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump([
+                    {
+                        "content": json.loads(doc.page_content),
+                        "metadata": doc.metadata
+                    } for doc in documents
+                ], f, ensure_ascii=False, indent=2)
+            logger.info(f"Saved {len(documents)} documents to {output_path}")
+        except Exception as e:
+            logger.error(f"Failed to save documents: {str(e)}")
     
     return documents
 
-def is_valid_chunk(chunk: Document) -> bool:
-    # Filter out chunks that are too small or contain no meaningful content
-    min_length = 50
-    return (
-        len(chunk.page_content.strip()) >= min_length and
-        not chunk.page_content.isspace() and
-        not re.match(r'^[\W\d]+$', chunk.page_content)
-    )
-
-def split_documents(documents: List[Document]) -> List[Document]:
-    """
-    Split documents into chunks using RecursiveCharacterTextSplitter.
-    
-    Args:
-        documents: List of documents
-        
-    Returns:
-        List of document chunks
-    """
-    logger.info(f"Splitting documents with chunk_size={CHUNK_SIZE}, overlap={CHUNK_OVERLAP}")
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=CHUNK_SIZE,
-        chunk_overlap=CHUNK_OVERLAP,
-        separators=[
-            # Added FRA-specific separators
-            "\nSection ", 
-            "\nQuestion ",
-            "\nAction ID: ",
-            # Standard separators
-            "\n\n", 
-            "\n", 
-            ". ", 
-            " ", 
-            ""
-        ],
-        keep_separator=True  # Keep separators to maintain context
-    )
-    chunks = text_splitter.split_documents(documents)
-
-    # Filter invalid chunks
-    chunks = [chunk for chunk in chunks if is_valid_chunk(chunk)]
-    logger.info(f"Created {len(chunks)} chunks")
-    
-    # Log sample chunks for inspection
-    if chunks:
-        logger.debug("Sample first chunk:")
-        logger.debug(f"Content: {chunks[0].page_content[:200]}...")
-        logger.debug(f"Metadata: {chunks[0].metadata}")
-    
-    return chunks
-
-# Save chunks to file for inspection
-def view_chunks(chunks, output_dir="chunk_outputs"):
-    """
-    View and save document chunks with both terminal preview and file output.
-    
-    Args:
-        chunks: List of document chunks
-        output_dir: Directory to save output files
-    """
-    # Create output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Create filename with timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"chunks_{timestamp}.txt"
-    filepath = os.path.join(output_dir, filename)
-    
-    # Write to file and show preview
-    with open(filepath, 'w') as f:
-        # Write summary header
-        f.write(f"Total Chunks: {len(chunks)}\n")
-        f.write("=" * 80 + "\n\n")
-        
-        # Preview first 3 chunks in terminal
-        print(f"\nPreviewing first 3 of {len(chunks)} chunks:")
-        print("=" * 80)
-        
-        # Process each chunk
-        for i, chunk in enumerate(chunks):
-            # Prepare chunk info using pprint
-            chunk_info = {
-                'chunk_number': i + 1,
-                'content_preview': chunk.page_content[:200] + "..." if len(chunk.page_content) > 200 else chunk.page_content,
-                'content_length': len(chunk.page_content),
-                'metadata': chunk.metadata
-            }
-            
-            # Write full chunk info to file
-            f.write(f"Chunk {i + 1}:\n")
-            f.write(pformat(chunk_info))
-            f.write("\n\n" + "=" * 80 + "\n\n")
-            
-            # Show preview in terminal for first 3 chunks
-            if i < 3:
-                print(f"\nChunk {i + 1}:")
-                print(pformat(chunk_info))
-                print("=" * 80)
-    
-    print(f"\nFull chunk details saved to: {filepath}")
-    return filepath
-
-def initialize_chroma(collection_name: str = CHROMA_SETTINGS["collection_name"]) -> chromadb.Collection:
-    """
-    Initialize ChromaDB client and collection.
-    
-    Args:
-        collection_name: Name of the collection to create/use
-        
-    Returns:
-        ChromaDB collection
-    """
-    logger.info(f"Initializing ChromaDB collection: {collection_name}")
-    client = chromadb.PersistentClient(path=CHROMA_SETTINGS["persist_directory"])
-    
-    # Delete collection if it already exists
-    try:
-        client.delete_collection(collection_name)
-        logger.info(f"Deleted existing collection: {collection_name}")
-    except ValueError:
-        pass
-        
-    return client.create_collection(
-        name=collection_name,
-        metadata={"description": "Fire Risk Assessment Documents"}
-    )
-
-def index_documents(collection: chromadb.Collection, chunks: List[Document]) -> None:
-    """
-    Index document chunks in ChromaDB.
-    
-    Args:
-        collection: ChromaDB collection
-        chunks: List of document chunks to index
-    """
-    logger.info(f"Initializing embedding model: {EMBEDDING_MODEL_NAME}")
-    embedding_model = HuggingFaceEmbeddings(
-        model_name=EMBEDDING_MODEL_NAME,
-        model_kwargs={'device': 'cpu'}
-    )
-    
-    # Add documents to collection in batches
-    batch_size = 100
-    total_batches = (len(chunks) + batch_size - 1) // batch_size
-    
-    for i in range(0, len(chunks), batch_size):
-        batch = chunks[i:i + batch_size]
-        batch_num = i // batch_size + 1
-        logger.info(f"Processing batch {batch_num} of {total_batches}")
-        
-        try:
-            # Prepare batch data
-            documents = [chunk.page_content for chunk in batch]
-            embeddings = embedding_model.embed_documents(documents)
-            metadatas = [{
-                "source": chunk.metadata.get("source", "unknown"),
-                "file_path": chunk.metadata.get("file_path", "unknown"),
-                "document_type": chunk.metadata.get("document_type", "unknown"),
-                "chunk_id": str(i + idx)
-            } for idx, chunk in enumerate(batch)]
-            ids = [f"doc_{i + idx}" for idx in range(len(batch))]
-            
-            # Add batch to collection
-            collection.add(
-                embeddings=embeddings,
-                documents=documents,
-                metadatas=metadatas,
-                ids=ids
-            )
-            
-        except Exception as e:
-            logger.error(f"Error processing batch {batch_num}: {str(e)}")
-            raise
-    
-    logger.info(f"Successfully indexed {len(chunks)} chunks")
-
 if __name__ == "__main__":
-    # Get all document paths in the data/raw directory
-    file_paths = glob.glob("data/raw/*")
+    file_paths = glob.glob(os.path.join(RAW_DATA_DIR, "*"))
+    logger.info(f"Found {len(file_paths)} files in {RAW_DATA_DIR}")
     
-    # Load documents
+    if not file_paths:
+        logger.warning(f"No files found in {RAW_DATA_DIR}")
+        exit(1)
+    
     documents = load_documents(file_paths)
     
-    # Split documents into chunks
-    chunks = split_documents(documents)
+    if not documents:
+        logger.warning("No documents were successfully processed")
+        exit(1)
     
-    # View and save chunks
-    view_chunks(chunks)
-    
-    # Initialize ChromaDB collection
-    collection = initialize_chroma()
-    
-    # Index document chunks
-    index_documents(collection, chunks)
+    logger.info(f"Successfully processed {len(documents)} documents")

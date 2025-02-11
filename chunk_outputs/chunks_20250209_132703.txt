@@ -1,0 +1,339 @@
+Total Chunks: 16
+================================================================================
+
+Chunk 1:
+{'chunk_number': 1,
+ 'content_length': 68,
+ 'content_preview': '```markdown\n'
+                    '# 1 Executive Summary\n'
+                    '\n'
+                    '## 1.1 Compliance and Risk Record',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 2:
+{'chunk_number': 2,
+ 'content_length': 976,
+ 'content_preview': 'Property Classification | Level 2\n'
+                    'BAFE SP205-1 Certificate Number | Refer to Master '
+                    'Property List\n'
+                    'Responsible Person | Hyde Housing Group\n'
+                    'Assessment Completed by | Martin Polley\n'
+                    'Assessment Checked by ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 3:
+{'chunk_number': 3,
+ 'content_length': 833,
+ 'content_preview': '## 1.2 Recommendation Summary\n'
+                    '\n'
+                    'Priority | Number of recommendations not complete\n'
+                    '| From previous assessments | At time of assessment | At '
+                    'report print date\n'
+                    ':--- | :--- | :--- | :---\n'
+                    'U | 0 | 0 | 0\n'
+                    'A | ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 4:
+{'chunk_number': 4,
+ 'content_length': 470,
+ 'content_preview': 'Section | Common Area Fire Doors\n'
+                    'Action ID | 620963\n'
+                    'Quantity | Known N/A, Potential N/A\n'
+                    'Priority | Man1\n'
+                    'Due Date | 23/03/2021\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | Fire doors to services risers/cupbo...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 5:
+{'chunk_number': 5,
+ 'content_length': 589,
+ 'content_preview': 'Section | Means of Escape\n'
+                    'Action ID | 620955\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | A\n'
+                    'Due Date | 23/08/2021\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | The final exit door is fitted with a lock which '
+                    'r...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 6:
+{'chunk_number': 6,
+ 'content_length': 435,
+ 'content_preview': "Section | Flat Entrance/Residents' Bedroom/Bedsit Doors\n"
+                    'Action ID | 620958\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | A\n'
+                    'Due Date | 23/08/2021\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | No adequate self-cl...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 7:
+{'chunk_number': 7,
+ 'content_length': 654,
+ 'content_preview': 'Section | Means of Giving Warning in Case of Fire\n'
+                    'Action ID | 620964\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | A\n'
+                    'Due Date | 23/08/2021\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | The Grade D system instal...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 8:
+{'chunk_number': 8,
+ 'content_length': 908,
+ 'content_preview': 'Section | Means of Escape\n'
+                    'Action ID | 620956\n'
+                    'Quantity | Known N/A, Potential N/A\n'
+                    'Priority | Man2\n'
+                    'Due Date | 23/02/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | It is not known if there is information/co...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 9:
+{'chunk_number': 9,
+ 'content_length': 583,
+ 'content_preview': "Section | Flat Entrance/Residents' Bedroom/Bedsit Doors\n"
+                    'Action ID | 620959\n'
+                    'Quantity | Known 0, Potential 1\n'
+                    'Priority | Man2\n'
+                    'Due Date | 23/02/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | No adequate self...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 10:
+{'chunk_number': 10,
+ 'content_length': 599,
+ 'content_preview': "Section | Flat Entrance/Residents' Bedroom/Bedsit Doors\n"
+                    'Action ID | 620961\n'
+                    'Quantity | Known 0, Potential 1\n'
+                    'Priority | Man2\n'
+                    'Due Date | 23/02/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | No intumescent s...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 11:
+{'chunk_number': 11,
+ 'content_length': 695,
+ 'content_preview': 'Section | Means of Giving Warning in Case of Fire\n'
+                    'Action ID | 620965\n'
+                    'Quantity | Known 0, Potential 1\n'
+                    'Priority | Man2\n'
+                    'Due Date | 23/02/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | A Grade D smoke alarm ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 12:
+{'chunk_number': 12,
+ 'content_length': 749,
+ 'content_preview': 'Section | Testing and Maintenance\n'
+                    'Action ID | 620967\n'
+                    'Quantity | Known N/A, Potential N/A\n'
+                    'Priority | Man2\n'
+                    'Due Date | 23/02/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | No evidence was available on-site ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 13:
+{'chunk_number': 13,
+ 'content_length': 928,
+ 'content_preview': 'Section | Arson\n'
+                    'Action ID | 620954\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | B\n'
+                    'Due Date | 23/08/2022\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | The entrance door to the premises is not '
+                    'self-closing. A ma...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 14:
+{'chunk_number': 14,
+ 'content_length': 605,
+ 'content_preview': "Section | Flat Entrance/Residents' Bedroom/Bedsit Doors\n"
+                    'Action ID | 620957\n'
+                    'Quantity | Known 2, Potential 2\n'
+                    'Priority | C\n'
+                    'Due Date | 23/02/2023\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | Excessive gaps were...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 15:
+{'chunk_number': 15,
+ 'content_length': 956,
+ 'content_preview': "Section | Flat Entrance/Residents' Bedroom/Bedsit Doors\n"
+                    'Action ID | 620960\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | C\n'
+                    'Due Date | 23/02/2023\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | No intumescent stri...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 16:
+{'chunk_number': 16,
+ 'content_length': 722,
+ 'content_preview': 'Section | Electrical Services\n'
+                    'Action ID | 620968\n'
+                    'Quantity | Known 1, Potential 1\n'
+                    'Priority | R\n'
+                    'Due Date | Unlimited\n'
+                    'Client Status | Not Complete\n'
+                    'Comment | Surface mounted wiring systems noted within '
+                    'th...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+

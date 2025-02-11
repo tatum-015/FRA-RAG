@@ -1,0 +1,350 @@
+Total Chunks: 19
+================================================================================
+
+Chunk 1:
+{'chunk_number': 1,
+ 'content_length': 786,
+ 'content_preview': '```markdown\n'
+                    '# Fire Risk Assessment\n'
+                    '\n'
+                    'Property assessed: A & B 80 Glengall Road London SE15 '
+                    '6NH\n'
+                    'Client: Hyde Housing Group\n'
+                    'UPRN: 01940080001\n'
+                    'Property Classification: Level 2\n'
+                    'Document Print Date: 23/02/2...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 2:
+{'chunk_number': 2,
+ 'content_length': 271,
+ 'content_preview': 'Please Note - The Action Plan within this report will '
+                    'update to reflect the status of each recommendation as at '
+                    'the date on which the report is generated. Please refer '
+                    'to the Document Print Date on th...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 3:
+{'chunk_number': 3,
+ 'content_length': 738,
+ 'content_preview': '<table>\n'
+                    '<thead>\n'
+                    '<tr>\n'
+                    '<th>Property Classification</th>\n'
+                    '<th>Level 2</th>\n'
+                    '</tr>\n'
+                    '</thead>\n'
+                    '<tbody>\n'
+                    '<tr>\n'
+                    '<td>BAFE SP205-1 Certificate Number</td>\n'
+                    '<td>Refer to Master Property List</td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '<td>Respon...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 4:
+{'chunk_number': 4,
+ 'content_length': 639,
+ 'content_preview': '<td>Medium</td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '<td>Taking into account the nature of the property and '
+                    'occupants, as well as fire protection and procedural '
+                    'arrangements observed at the time of this fire risk '
+                    'assessment, i...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 5:
+{'chunk_number': 5,
+ 'content_length': 786,
+ 'content_preview': '## 1.2 Recommendation Summary\n'
+                    '\n'
+                    '<table>\n'
+                    '<thead>\n'
+                    '<tr>\n'
+                    '<th>Priority</th>\n'
+                    '<th>Number of recommendations not complete</th>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '<th></th>\n'
+                    '<th>From previous assessments</th>\n'
+                    '<th>At time of assessment<...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 6:
+{'chunk_number': 6,
+ 'content_length': 690,
+ 'content_preview': '## 1.3 Evacuation Strategy\n'
+                    '\n'
+                    '<table>\n'
+                    '<thead>\n'
+                    '<tr>\n'
+                    '<th></th>\n'
+                    '<th></th>\n'
+                    '</tr>\n'
+                    '</thead>\n'
+                    '<tbody>\n'
+                    '<tr>\n'
+                    '<td>Evacuation strategy for this property at time of '
+                    'assessment</td>\n'
+                    '<td>Simultaneous Evacuation</td>\n'
+                    '<...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 7:
+{'chunk_number': 7,
+ 'content_length': 489,
+ 'content_preview': 'Section <b>Common Area Fire Doors</b><br>\n'
+                    'Action ID <b>620963</b><br>\n'
+                    'Quantity <b>Known N/A</b><br>\n'
+                    '<b>Potential N/A</b><br>\n'
+                    'Priority <b>Man1</b>\n'
+                    '</td>\n'
+                    '<td>\n'
+                    'Comment: Fire doors to services risers/cupb...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 8:
+{'chunk_number': 8,
+ 'content_length': 999,
+ 'content_preview': 'src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZwAAAFtCAYAAAC9L4nUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADrCSURBVHhe7N15mBzF0T3w7j01e941F9S9xJc76G2H8ZqH2O9s7s52d+552...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 9:
+{'chunk_number': 9,
+ 'content_length': 1000,
+ 'content_preview': 'mZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 10:
+{'chunk_number': 10,
+ 'content_length': 1000,
+ 'content_preview': 'ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmmpmpmZmZmZmZmZ93/9z575/95gX5p1x/7+y3v3P3Pf6a83v/57/z229f8+89sH87/755wM3f/f3f789O/n99/966aJ/kF3/+R3d/n1p3/562b/mH/3647d/97v/i8c8r//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 11:
+{'chunk_number': 11,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 12:
+{'chunk_number': 12,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 13:
+{'chunk_number': 13,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 14:
+{'chunk_number': 14,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 15:
+{'chunk_number': 15,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 16:
+{'chunk_number': 16,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 17:
+{'chunk_number': 17,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 18:
+{'chunk_number': 18,
+ 'content_length': 1000,
+ 'content_preview': '/+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3/+v//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 19:
+{'chunk_number': 19,
+ 'content_length': 374,
+ 'content_preview': '/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//3//3//1//7/6//+v//7/+v//3/+v//...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+

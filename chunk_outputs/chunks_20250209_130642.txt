@@ -1,0 +1,951 @@
+Total Chunks: 46
+================================================================================
+
+Chunk 1:
+{'chunk_number': 1,
+ 'content_length': 802,
+ 'content_preview': '```markdown\n'
+                    '# Fire Risk Assessment\n'
+                    '\n'
+                    '**Property assessed:** A & B 80 Glengall Road London SE15 '
+                    '6NH\n'
+                    '**Client:** Hyde Housing Group\n'
+                    '**UPRN:** 01940080001\n'
+                    '**Property Classification:** Level 2\n'
+                    '**Document P...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 2:
+{'chunk_number': 2,
+ 'content_length': 753,
+ 'content_preview': 'Please Note - The Action Plan within this report will '
+                    'update to reflect the status of each recommendation as at '
+                    'the date on which the report is generated. Please refer '
+                    'to the Document Print Date on th...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 3:
+{'chunk_number': 3,
+ 'content_length': 856,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Taking into account the fire prevention measures '
+                    'observed\n'
+                    'at the time of this risk assessment, it is considered '
+                    'that the\n'
+                    'hazard from fire (likelihood of fire) at this property '
+                    'is:</th>...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 4:
+{'chunk_number': 4,
+ 'content_length': 820,
+ 'content_preview': '## 1.2 Recommendation Summary\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr>\n'
+                    '  <th>Priority</th>\n'
+                    '  <th>Number of recommendations not complete</th>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <th></th>\n'
+                    '  <th>From previous assessments</th>\n'
+                    '  <th>At time of assessmen...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 5:
+{'chunk_number': 5,
+ 'content_length': 495,
+ 'content_preview': '## 1.3 Evacuation Strategy\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Evacuation strategy for this property at time of '
+                    'assessment</th><td>Simultaneous Evacuation</td></tr>\n'
+                    '<tr><th>Notes</th><td>The premises is a conversion wit...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 6:
+{'chunk_number': 6,
+ 'content_length': 901,
+ 'content_preview': '<table>\n'
+                    '<tr>\n'
+                    '  <th>Details</th>\n'
+                    '  <th>Comments/recommendations</th>\n'
+                    '  <th>Photo</th>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** M.8<br>\n'
+                    '    **Section:** Common Area Fire Doors<br>\n'
+                    '    **Action ID:** 620963<b...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 7:
+{'chunk_number': 7,
+ 'content_length': 973,
+ 'content_preview': '**Quantity Known:** 1<br>\n'
+                    '    **Quantity Potential:** 1<br>\n'
+                    '    **Priority:** A\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    **Comment:** The final exit door is fitted with a '
+                    'lock which requires the use of a key to open and is...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 8:
+{'chunk_number': 8,
+ 'content_length': 994,
+ 'content_preview': '**Recommendation:** An effective self-closing device '
+                    'should be fitted to the doors as noted.<br>\n'
+                    '    **Due Date:** 23/08/2021<br>\n'
+                    '    **Client Status:** Not Complete\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    <img></img>\n'
+                    '  <...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 9:
+{'chunk_number': 9,
+ 'content_length': 502,
+ 'content_preview': '**Client Status:** Not Complete\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    <img></img>\n'
+                    '  </td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** K.16<br>\n'
+                    '    **Section:** Means of Escape<br>\n'
+                    '    **Action ID:** 620956<br>\n'
+                    '    **Quantity Kn...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 10:
+{'chunk_number': 10,
+ 'content_length': 975,
+ 'content_preview': '**Recommendation:** Management should encourage residents '
+                    'of this General Needs property to contact the building '
+                    'manager if they require assistance in developing a '
+                    'personal emergency evacuation plan (...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 11:
+{'chunk_number': 11,
+ 'content_length': 977,
+ 'content_preview': '**Recommendation:** Flat entrance doors not sampled at '
+                    'the time of this inspection should be checked to confirm '
+                    'that self-closers are fitted and remain effective. An '
+                    'ongoing rolling programme of check...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 12:
+{'chunk_number': 12,
+ 'content_length': 986,
+ 'content_preview': '**Due Date:** 23/02/2022<br>\n'
+                    '    **Client Status:** Not Complete\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    <img></img>\n'
+                    '  </td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** P.5<br>\n'
+                    '    **Section:** Means of Giving Warning in Case of ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 13:
+{'chunk_number': 13,
+ 'content_length': 973,
+ 'content_preview': '</td>\n'
+                    '  <td>\n'
+                    '    No image available\n'
+                    '  </td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** V.1<br>\n'
+                    '    **Section:** Testing and Maintenance<br>\n'
+                    '    **Action ID:** 620967<br>\n'
+                    '    **Quantity Known:** N/A<br>\n'
+                    '    *...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 14:
+{'chunk_number': 14,
+ 'content_length': 949,
+ 'content_preview': '</td>\n'
+                    '  <td>\n'
+                    '    <img></img>\n'
+                    '  </td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** C.1<br>\n'
+                    '    **Section:** Arson<br>\n'
+                    '    **Action ID:** 620954<br>\n'
+                    '    **Quantity Known:** 1<br>\n'
+                    '    **Quantity Potential:** 1<br...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 15:
+{'chunk_number': 15,
+ 'content_length': 994,
+ 'content_preview': '**Recommendation:** The holes noted should be sealed with '
+                    'a suitable fire-stopping material such as an intumescent '
+                    'paste. Period of fire resistance required is 30 '
+                    'minutes.<br>\n'
+                    '    **Due Date:** 23/08/...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 16:
+{'chunk_number': 16,
+ 'content_length': 906,
+ 'content_preview': '**Due Date:** 23/02/2023<br>\n'
+                    '    **Client Status:** Not Complete\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    <img></img>\n'
+                    '  </td>\n'
+                    '</tr>\n'
+                    '<tr>\n'
+                    '  <td>\n'
+                    '    **Question:** L.7<br>\n'
+                    "    **Section:** Flat Entrance/Residents' Bedroom/Be...",
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 17:
+{'chunk_number': 17,
+ 'content_length': 893,
+ 'content_preview': '**Quantity Known:** 1<br>\n'
+                    '    **Quantity Potential:** 1<br>\n'
+                    '    **Priority:** C\n'
+                    '  </td>\n'
+                    '  <td>\n'
+                    '    **Comment:** Other common area fire door issues noted '
+                    'at the time of inspection include - Missing scr...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 18:
+{'chunk_number': 18,
+ 'content_length': 960,
+ 'content_preview': '**Recommendation:** The cable fixings, conduit or '
+                    'trunking as noted within the common escape route should '
+                    'be replaced with a cable support system which ensures '
+                    'that wiring is not liable to premature c...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 19:
+{'chunk_number': 19,
+ 'content_length': 65,
+ 'content_preview': '# 3 Introduction and Scope\n'
+                    '\n'
+                    '## 3.1 Limitations of this assessment',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 20:
+{'chunk_number': 20,
+ 'content_length': 868,
+ 'content_preview': 'This fire risk assessment report represents the Fire Risk '
+                    "Assessment Company's understanding for the current "
+                    'building designs and use, the fire strategy and proposed '
+                    'evacuation procedures. It is to pr...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 21:
+{'chunk_number': 21,
+ 'content_length': 303,
+ 'content_preview': '. Each fire risk assessment identifies areas to which '
+                    'access was not available during the inspection. In '
+                    'certain instances, we may have made recommendations for '
+                    'further inspection in the report, howev...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 22:
+{'chunk_number': 22,
+ 'content_length': 242,
+ 'content_preview': '## 3.2 Legislation\n'
+                    '\n'
+                    'This fire risk assessment has been carried out to meet '
+                    'the requirements of The Regulatory Reform (Fire Safety) '
+                    'Order 2005 [the Order]. The following is a summary '
+                    'description of som...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 23:
+{'chunk_number': 23,
+ 'content_length': 958,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Article 3</th><td>Defines the responsible person '
+                    'as a.) the employer, bi.) the person in control of the '
+                    'premises, or b.ii) the owner/landlord.</td></tr>\n'
+                    '<tr><th>Article 4</th><td>Defin...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 24:
+{'chunk_number': 24,
+ 'content_length': 902,
+ 'content_preview': '<tr><th>Article 11</th><td>Defines the responsible person '
+                    'as a.) the employer, bi.) the person in control of the '
+                    'premises, or b.ii) the owner/landlord.</td></tr>\n'
+                    '<tr><th>Article 13</th><td>Requires th...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 25:
+{'chunk_number': 25,
+ 'content_length': 582,
+ 'content_preview': '<tr><th>Article 20</th><td>Requires that any external '
+                    'employers / employees who are working (or have staff '
+                    'working) in premises are provided with relevant '
+                    'information on the risks and the preventive a...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 26:
+{'chunk_number': 26,
+ 'content_length': 230,
+ 'content_preview': '## 3.3 Risk Level\n'
+                    '\n'
+                    'A suitable risk-based control plan should involve effort '
+                    'and urgency that is proportional to risk. The following '
+                    'risk- based control plan is based on one advocated by BS '
+                    '8800 for ge...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 27:
+{'chunk_number': 27,
+ 'content_length': 985,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Risk level</th><th>Action and time '
+                    'table</th></tr>\n'
+                    '<tr><th>Trivial</th><td>No action is required and no '
+                    'detailed records need be kept.</td></tr>\n'
+                    '<tr><th>Tolerable</th><td>No major addi...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 28:
+{'chunk_number': 28,
+ 'content_length': 119,
+ 'content_preview': '<tr><th>Intolerable</th><td>Building (or relevant area) '
+                    'should not be occupied until the risk is reduced.</td>\n'
+                    '</table>',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 29:
+{'chunk_number': 29,
+ 'content_length': 729,
+ 'content_preview': 'It should be noted that, although the purpose of '
+                    'estimating the risk level is to place the risk in '
+                    'context, the above approach to fire risk assessment is '
+                    'subjective and for guidance only. All hazards ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 30:
+{'chunk_number': 30,
+ 'content_length': 967,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Recommendation Priorities:</th><th>Recommended '
+                    'Timescales</th></tr>\n'
+                    '<tr><th>U</th><td>1 day</td></tr>\n'
+                    '<tr><th>A</th><td>6 months</td></tr>\n'
+                    '<tr><th>B</th><td>18 months</td></tr>\n'
+                    '<tr><th...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 31:
+{'chunk_number': 31,
+ 'content_length': 335,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Total No. of Floors</th><td>4</td></tr>\n'
+                    '<tr><th>Total No. of Floors (common area '
+                    'only)</th><td>1</td></tr>\n'
+                    '<tr><th>Total No. of Storeys (ground and '
+                    'above)</th><td>3</td></tr>\n'
+                    '<tr><th>G...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 32:
+{'chunk_number': 32,
+ 'content_length': 968,
+ 'content_preview': '<tr><th>Total Area of All Floors (m2) (if '
+                    'applicable)</th><td>N/A</td></tr>\n'
+                    '<tr><th>Building Layout Description</th><td>80 Glengall '
+                    'is an end terraced residential property converted into '
+                    'two self-cont...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 33:
+{'chunk_number': 33,
+ 'content_length': 851,
+ 'content_preview': '<tr><th>Extent of Common Areas (area '
+                    'assessed)</th><td>Upper ground floor entrance hall, '
+                    'electrical installation cupboard.</td></tr>\n'
+                    '<tr><th>Areas of the building to which access was not '
+                    'available.</t...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 34:
+{'chunk_number': 34,
+ 'content_length': 644,
+ 'content_preview': '**Construction Information**\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Construction Type</th><td>Traditional</td></tr>\n'
+                    '<tr><th>Property Type</th><td>Converted</td></tr>\n'
+                    '<tr><th>Date of Construction or Conversion (year '
+                    'approx....',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 35:
+{'chunk_number': 35,
+ 'content_length': 984,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Management Extent</th><td>Partially Managed '
+                    'Building (Manager or Senior Staff not onsite '
+                    'regularly)</td></tr>\n'
+                    '<tr><th>Details of any onsite management</th><td>None on '
+                    'site but occasion...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 36:
+{'chunk_number': 36,
+ 'content_length': 232,
+ 'content_preview': '<tr><th>Identified people especially at '
+                    'risk</th><td>General Needs - No information</td></tr>\n'
+                    '<tr><th>-Comments</th><td>No information, however, '
+                    'General Needs premises so occupants are typical of the '
+                    '...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 37:
+{'chunk_number': 37,
+ 'content_length': 816,
+ 'content_preview': '**Other information**\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Fire loss experience (since last '
+                    'FRA)</th><td>Unknown, no evidence of fire/smoke '
+                    'damage.</td></tr>\n'
+                    '<tr><th>Any other relevant '
+                    'information</th><td>None.</td>\n'
+                    '</ta...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 38:
+{'chunk_number': 38,
+ 'content_length': 394,
+ 'content_preview': '**Fire Safety Guidance**\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Main fire safety guidance used in this '
+                    "assessment</th><td>02) LACORS - 'Housing - Fire Safety' - "
+                    '2008</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Other key fire safety guidance referr...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 39:
+{'chunk_number': 39,
+ 'content_length': 948,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Question - A.1: Was access gained to the '
+                    'electrical intake/meter cupboard(s) for the '
+                    'block?</th><td>Yes</td></tr>\n'
+                    '<tr><th>Comment:</th><td>The electrical intake/meter '
+                    'cupboard for the ...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 40:
+{'chunk_number': 40,
+ 'content_length': 978,
+ 'content_preview': '</tr>\n'
+                    '<tr><th>Question - A.4: Is portable appliance testing '
+                    '(PAT) being completed within the common '
+                    'areas?</th><td>Not Applicable</td>\n'
+                    '<tr><th>Comment:</th><td>No portable electrical '
+                    'appliances were s...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 41:
+{'chunk_number': 41,
+ 'content_length': 958,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Question - B.1: Are there suitable arrangements '
+                    'in place for those who wish to smoke? (State what '
+                    'arrangements are in place)</th><td>Yes</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Comment:</th><td>Residents w...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 42:
+{'chunk_number': 42,
+ 'content_length': 180,
+ 'content_preview': '</tr>\n'
+                    "<tr><th>Comment:</th><td>Adequate 'No Smoking' signage is "
+                    'provided in the common area as required by the Smoke-free '
+                    '(Premises and Enforcement) Regulations 2006.</td>\n'
+                    '</table>',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 43:
+{'chunk_number': 43,
+ 'content_length': 889,
+ 'content_preview': '<table>\n'
+                    '<tr><th>Question - C.1: Are the premises secured against '
+                    'arson by outsiders? (Please state how)</th><td>No</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Comment:</th><td>The entrance door to the '
+                    'premises is not self-clo...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 44:
+{'chunk_number': 44,
+ 'content_length': 546,
+ 'content_preview': '</tr>\n'
+                    '<tr><th>Question - C.3: Are bins adequately secured at or '
+                    'within their storage location? (Please state how bins are '
+                    'secured)</th><td>Yes</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Comment:</th><td>Wheelie bins stored a...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 45:
+{'chunk_number': 45,
+ 'content_length': 853,
+ 'content_preview': '## D. Space Heating\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Question - D.1: Are the common areas of the '
+                    'building provided with any form of fixed space heating '
+                    'system? (State type provided)</th><td>No</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Comm...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+
+Chunk 46:
+{'chunk_number': 46,
+ 'content_length': 988,
+ 'content_preview': '## F. Lightning\n'
+                    '\n'
+                    '<table>\n'
+                    '<tr><th>Question - F.1: Does the building have a '
+                    'lightning protection system installed?</th><td>No</td>\n'
+                    '</tr>\n'
+                    '<tr><th>Comment:</th><td>No lightning protection system '
+                    'was noted...',
+ 'metadata': {'action_id': None,
+              'document_type': 'FRA',
+              'extraction_method': 'gemini',
+              'file_path': 'data/raw/UPRN-01940080001_Glengall-Road_80_A-and-B_20210223124747.pdf',
+              'has_action': False,
+              'parent_section': None,
+              'question_id': None,
+              'section_type': None}}
+
+================================================================================
+

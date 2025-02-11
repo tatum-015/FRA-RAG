@@ -23,5 +23,6 @@ setup(
         'pytest>=7.4.0',
         'nltk>=3.6.0',
         'streamlit>=1.31.0',
+        'google-generativeai>=0.8.4'  # Latest version with Flash 2.0 support
     ],
 ) 
